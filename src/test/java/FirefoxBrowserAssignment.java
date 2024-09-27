@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class FirefoxBrowserAssignment {
 
@@ -20,8 +21,11 @@ Acceptance Criteria:
     public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
+
         driver.get("http://www.syntaxprojects.com/");
+
+        driver.manage().window().maximize();
+
         String url=driver.getCurrentUrl();
         System.out.println("URL: "+url);
         String title=driver.getTitle();
