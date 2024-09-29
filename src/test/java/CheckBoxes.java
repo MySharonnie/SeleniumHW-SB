@@ -50,7 +50,7 @@ public class CheckBoxes {
         WebElement enableButton1 = driver.findElement(By.xpath("//button[@id='toggleCheckboxButtons']"));
         if (!supportCB.isDisplayed() && !musicCB.isDisplayed()) {
             enableButton1.click();
-            Thread.sleep(2000);
+
             musicCB.click();
         }
 
@@ -58,17 +58,13 @@ public class CheckBoxes {
         //   - Verify that the **Receive Notifications** checkbox is disabled.
         //   - Click on the "Enable Checkboxes" button, and then select the **Receive Notifications** checkbox.
 
-        WebElement notifications=driver.findElement(By.xpath("//input[@value='Receive-Notifications']"));
-        WebElement enableButton2=driver.findElement(By.xpath("//button[@id='enabledcheckbox']"));
-        if (!notifications.isEnabled()){
+        WebElement notifications = driver.findElement(By.xpath("//input[@value='Receive-Notifications']"));
+        WebElement enableButton2 = driver.findElement(By.xpath("//button[@id='enabledcheckbox']"));
+        if (!notifications.isEnabled()) {
             enableButton2.click();
-            Thread.sleep(2000);
+
             notifications.click();
         }
-
-
-
-
 
 
     }

@@ -27,7 +27,7 @@ public class DropdownWithoutSelectTag {
 
         WebElement fruitDropdown=driver.findElement(By.xpath("//div[@id='dream_fruits']"));
         fruitDropdown.click();
-        Thread.sleep(2000);
+
         List<WebElement> fruitOption=driver.findElements(By.xpath("//ul[@class='dropdown-menu single-dropdown-menu']/li/a"));
         for(WebElement fruit: fruitOption){
             if(fruit.getText().equals("Mango")){
@@ -43,7 +43,7 @@ public class DropdownWithoutSelectTag {
 
         WebElement hobbiesButton=driver.findElement(By.xpath("//div[@id='favorite_hobbies']"));
         hobbiesButton.click();
-        Thread.sleep(2000);
+
         List<WebElement> hobbies=driver.findElements(By.xpath("//ul[@class='dropdown-menu multi-dropdown-menu']/li/a"));
         for (WebElement option:hobbies){
             if(option.getText().equals("Reading")){
