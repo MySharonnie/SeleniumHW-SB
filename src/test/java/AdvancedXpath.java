@@ -54,6 +54,8 @@ Acceptance Criteria
         WebElement child=driver.findElement(By.xpath("//div[@id='familyTree']/child::input[3]"));
         child.sendKeys("Ronnie");
 
+        System.out.println("This is an edit");
+
 
 
 
